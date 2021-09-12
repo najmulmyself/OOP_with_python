@@ -23,3 +23,16 @@ print (new_numbers)
 # declare a list 
 
 # new_variables = [new_item for item in list]
+
+# Example 2
+
+name = "Robot"
+
+letter = [let for let in name]
+
+print(letter)
+
+# Example 3
+
+range_list = [range*2 for range in range(7,12)]
+print(range_list)
