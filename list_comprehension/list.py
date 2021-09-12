@@ -1,4 +1,11 @@
-# simple list look like this
+# simple list looks like this
 
-lists = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10]
-print (lists);
+numbers = [1 , 2 , 3 , 4]
+new_list = []
+
+for n in numbers:
+    add_list = n + 1
+    new_list.append(add_list)
+
+
+print (new_list)
