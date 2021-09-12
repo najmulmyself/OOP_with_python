@@ -36,3 +36,28 @@ print(letter)
 
 range_list = [range*2 for range in range(7,12)]
 print(range_list)
+
+#conditional list comprehension
+
+# new_list = [new_item for item in list if test]
+
+names = ['Alex' , 'John' , 'Angela' , 'Bob' , 'Fardin' , 'Trixie']
+
+short_name = [name for name in names if len(name) > 4]
+
+print (short_name)
+
+#squared number exercise
+
+numbers_test = [1 , 1 ,2 , 3 ,5 ,8,13 ,21 , 34, 55]
+squared_number = [num*num for num in numbers_test]
+
+print(squared_number)
+
+
+#even number exercise
+
+even_numbers = [1 , 1 , 2 , 3 ,5 , 8 , 13, 21 , 34, 55]
+result = [num for num in even_numbers if num % 2 == 0]
+
+print(result)
