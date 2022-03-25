@@ -18,14 +18,17 @@ html = bs(r.text,'html.parser')
 
 # print(jobD)
 
-divPhone = html.findAll('div',{'class':'makers'})
+divPhone = html.find('div',{'class':'makers'})
 # titlePhone= divPhone[0].findAll('span').text
 
 # print(type(divPhone))
 
-title = divPhone.find_all('span')
+# title = divPhone.find_all('span')
 
 # for titlePhone in divPhone:
 #     titlePhone.findAll('span')
 #     print(titlePhone)
-print(title)
+
+spanPhone = divPhone.find_all('span')
+for titlePhone in spanPhone:
+    print(titlePhone.text)
