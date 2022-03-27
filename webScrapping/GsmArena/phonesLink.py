@@ -2,8 +2,8 @@
 
 import requests
 from bs4 import BeautifulSoup as bs
-
-url = 'https://www.gsmarena.com/samsung-phones-9.php'
+number = input('Enter Number')
+url = f"https://www.gsmarena.com/samsung-phones-f-9-0-p{number}.php"
 r = requests.get(url)
 html = bs(r.text,'html.parser')
 divPhone = html.find('div',{'class':'makers'})
