@@ -10,8 +10,13 @@ divPhone = html.find('div',{'class':'makers'})
 
 linkPhone = divPhone.find_all('a')
 # margedLink = linkPhone.__getattribute__('href')
-for link in linkPhone.__getitem__(0):
-    print(link) 
+# for link in linkPhone.__getitem__(0):
+    # print(link) 
 # test = linkPhone.get('href')
 
-# print(f"https://www.gsmarena.com/{test}")
+for link in linkPhone:
+    modifiedLink = link.get('href')
+    # print(test)
+    print(f"https://www.gsmarena.com/{modifiedLink}")
+    with open('pLink.txt','a') as out:
+        out.writelines(f"https://www.gsmarena.com/{modifiedLink}\n")
