@@ -31,4 +31,12 @@ divPhone = html.find('div',{'class':'makers'})
 
 spanPhone = divPhone.find_all('span')
 for titlePhone in spanPhone:
-    print(titlePhone.text)
+    # print(titlePhone.text)
+    with open('pt.text','a') as out:
+        out.writelines(f"{titlePhone.text}\n")
+
+# with open('pt.text','w') as out:
+#     out.writelines(titlePhone.text)
+# tileOfThePhone = open('phoneTitle.txt', 'w')
+# tileOfThePhone.write(titlePhone.text)
+# tileOfThePhone.close
